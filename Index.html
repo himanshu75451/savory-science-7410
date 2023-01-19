@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .nav > div{
+            width: 100%; box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px 20px 3px 20px ;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .nav > div > div > img{
+            width: 8%;
+            margin: auto;
+            display: flex;
+        }
+        .nav > div > div > button{
+            background-color: orangered;
+            border: none;
+            font-size: large;
+            color: white;
+            padding: 15px 
+        }
+        .nav > div > a{
+            color: orangered
+        }
+        .Top{
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+        }
+        .Top > div > img{
+            width: 100%;
+            height: 80%;
+        }
+        .Top > div > video{
+            width: 100%;
+            height: 80%;
+        }
+        .Mid > div > img{
+            width: 100%;
+        }
+        /* .data{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-image: url('./Images/our-food_1280.jpg');
+            background-size: cover;
+        } */
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <a href="#">MENU</a>
+            <div>
+                <img src="./Images/Hot-grill-logo1.png" alt="error">
+            </div>
+            <div>
+                <button> <a href="#">Order New</a></button>
+                <div>
+                    <button><a href="#">MY ACCOUNT</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------------------------------------------------------------- -->
+    <div class="slider-wrapper">
+        <div class="Top">
+            <div>
+              <img src="./Images/7xm.xyz 111.jpg" alt="image 1" />
+            </div>
+            <div>
+              <img src="./Images/7xm.xyz 222.jpg" alt="image 2" />
+            </div>
+            <div>
+              <img src="./Images/7xm.xyz333.jpg" alt="image 3" />
+            </div>
+            <div>
+                <video autoplay playsinline class="slide-video slide-media" muted preload="metadata" poster="/content/img/hero/hero-poster.webp" aria-label='Video - El Pollo Loco: Feed the Flame' >
+                    <source src="https://cdn.elpolloloco.com/homepage.mp4" type="video/mp4" />
+                    <source src="https://cdn.elpolloloco.com/homepage.webm" type="video/webm" />
+                    <source src="https://cdn.elpolloloco.com/homepage.ogv" type="video/ogg" />
+                </video>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------------------------------------------------------------- -->
+    <div class="Mid">
+        <div>
+            <img src="https://www.elpolloloco.com/content/img/chicken-leg_1280.webp" alt="Error">
+        </div>
+        <div class="data">
+            <h2>Our Food</h2>
+            <p>Steeped in tradition. Filled with freshness. Our menu is the intersection of our Sinaloan roots and our SoCal hometown.</p>
+            <button><a href="#">View Menu</a></button>
+            <img src="https://www.elpolloloco.com/content/img/our-food_1280.webp" alt="error">
+        </div>
+        <div></div>
+        <div>
+            <img src="https://www.elpolloloco.com/content/img/catering_1280.webp" alt="error">
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+</div> 
+</body>
+</html>
