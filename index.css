@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav > div{
+    width: 100%; box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px 3px 20px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav > div > div > img{
+    width: 7%;
+    margin: auto;
+    display: flex;
+}
+.nav > div > a{
+    color: orangered
+}
+.red{
+    display: flex;
+    gap: 10px;
+}
+.red > a > img{
+    width: 40px;
+}
+.Top{
+    width: 100%;
+    display: flex;
+}
+.Top > video{
+    width: 100%;
+}
+.Mid > div > img{
+    width: 100%;
+}
+.mid-section-part > div{
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px 15px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(253, 174, 29);
+}
+.mid-section-part > div > div{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+}
+.mid-section-part > div > div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.mid-section-part > div > div > h2{
+    color: rgb(66, 61, 61);
+}
+.mid-section-part > div > div > img{
+    width: 80%;
+}
+.data{
+    position: absolute;
+    text-align: center;
+    line-height: 1.2;
+    justify-content: center;
+    left: 500px;
+    margin-top: 400px;
+}
+.data > h2{
+    margin-bottom: 20px;
+    font-size:xxx-large;
+    color: orangered;
+}
+.data > button{
+    border: none;
+    margin-top: 35px;
+    font-size: large;
+    padding: 12px 40px 12px 40px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(10, 10, 187);
+}
+.data > button > a{
+    color: white;
+    text-decoration: none;
+}
+.data > button:hover{
+    background-color: orangered;
+}
+.data > div > img{
+    width:100% ;
+}
+.data2{
+    position: absolute;
+    text-align: center;
+    line-height: 1.2;
+    justify-content: center;
+    left: 400px;
+    margin-top: 400px;
+}
+.data2 > h2{
+    margin-bottom: 20px;
+    font-size:xxx-large;
+    color: orangered;
+}
+.data2 > button{
+    border: none;
+    margin-top: 35px;
+    font-size: large;
+    padding: 12px 40px 12px 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(10, 10, 187);
+}
+.data2 > button > a{
+    color: white;
+    text-decoration: none;
+}
+.data2 > button:hover{
+    background-color: orangered;
+}
+.data2 > div > img{
+    width:100% ;
+}
+.story{
+    /* width: 100%; */
+    position: absolute;
+    line-height: 1.2;
+    left: 100px;
+    margin-top: 100px;
+}
+.story > h2{
+    margin-bottom: 20px;
+    font-size:xx-large;
+}
+.story > button{
+    border: none;
+    margin-top: 35px;
+    font-size: large;
+    padding: 12px 40px 12px 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(10, 10, 187);
+}
+.story > button > a{
+    color: white;
+    text-decoration: none;
+}
+.story > button:hover{
+    background-color: orangered;
+}
+.story > div >img{
+    width: 100%;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 168);
+    padding: 50px;
+}
+.bottom > div > div h3{
+    margin-top: 30px;
+    color: white;
+    
+}
+.bottom > div > div h3 > a{
+    color: white;
+    text-decoration: none;
+}
+.side{
+    margin-top: 30px;
+    color: white;
+    line-height: 1.6;
+}
+.side > div{
+    display: flex;
+    gap: 15px;
+}
+.side > h3{
+    margin-top: 15px;
+}
+.side > h3 > a{
+    color: white;
+}
+.side > div > img{
+    width: 25%;
+    padding-top: 20px;
+}
