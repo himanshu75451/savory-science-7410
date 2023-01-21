@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>HOT GRILL - Feed the flame</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .nav > div{
+            width: 100%; box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px 20px 3px 20px ;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .nav > div > button{
+            font-size: 30px;
+            border: none;
+            color: orangered;
+            padding: 4px;
+            border-radius: 3px;
+        }
+        .nav > div > button:hover{
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+        }
+        .nav > div > div > img{
+            width: 7%;
+            margin: auto;
+            display: flex;
+        }
+        .nav > div > a{
+            color: orangered
+        }
+        .red{
+            display: flex;
+            gap: 10px;
+        }
+        .red > a > img{
+            width: 40px;
+        }
+        .bar{
+            background-color: rgb(239, 207, 63); 
+        }
+        .bar > a{
+            padding: 10px;
+            text-decoration: none;   
+        }
+
+        .story{
+            /* width: 100%; */
+            position: absolute;
+            line-height: 1.2;
+            left: 100px;
+            margin-top: 100px;
+        }
+        .story > h2{
+            margin-bottom: 20px;
+            font-size:xx-large;
+        }
+        .story > button{
+            border: none;
+            margin-top: 35px;
+            font-size: large;
+            padding: 12px 40px 12px 40px;
+            border-radius: 20px;
+            color: white;
+            background-color: rgb(10, 10, 187);
+        }
+        .story > button > a{
+            color: white;
+            text-decoration: none;
+        }
+        .story > button:hover{
+            background-color: orangered;
+        }
+        .story > div > img{
+            width: 0%;
+            height: 20%;
+        }
+        .head > h1{
+            font-size: xx-large;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <button> <a href="./Toggle-bar.html"><i class="fa-solid fa-bars"></i></a></button>
+            <H3>HOT - GRILL</H3>
+            <div>
+                <img src="./Images/Hot-grill-logo1.png" alt="error">
+            </div>
+            <div class="red">
+                <a href="./order-cart.html"> <img src="./Images/Cart.jpg" alt="error"></a>
+                <a href="./Log-in-page.html"> <img src="./Images/icon-name.jpg" alt="error"></a>
+            </div>
+        </div>
+        <div class="bar">
+            <a href="./Index.html"><b> HOME</b></a>
+            <a href="./Our-Food.html"> <b>OUR FOOD</b></a>
+            <a href="./Family-Dinners.html"> <b>FAMILY DINNERS</b></a>
+            <a href="./Catering-menu.html"> <b>CATERING MENU</b></a>
+            <a href="./Chicken-Meals.html"> <b>CHICKEN MEALS</b></a>
+            <a href="./Menu.html"> <b>API MENU</b></a>
+            <a href="./Gift-Cards.html"> <b>GIFT CARDS</b></a>
+            <a href="./Contact-Us.html"> <b>CONTACT US</b></a>
+            <a href="./Our-Story.html"> <b>OUR STRORY</b></a>
+        </div>
+    </div>
+    <div class="story">
+        <h2>BORN IN MEXICO,  <br> RAISED IN L.A.</h2>
+        <P>It started with a mother's recipe and one man's desire for a <br> quality chicken dinner after a hard day's work. Over 40 <br> years later, we still grill our chicken the same way, citrus <br> marinated and grilled low and slow over an open flame. In <br> that time, we've fed families, connected cultures and have <br> become a Southern California institution.</P>
+        <button> <a href="./Our-Story.html"> OUR STORY</a></button>
+    </div>
+    <div>
+        <img src="https://www.elpolloloco.com/content/img/our-story_1280.webp" alt="error">
+    </div>
+
+    <div class="head">
+        <h1>WHY WE DO WHAT WE DO</h1>
+        <p> We believe that good food feeds more than just our appetites. <br> It nourishes the soul. <br>  
+            <br>
+            Good food brings us together. And connects us to something <br> larger than ourselves. <br>
+            <br>
+            We believe that sitting down and sharing a meal prepared with <br> time, love and quality ingredients makes us all feel like family. <br>
+            <br>
+            And when that happens, the world is a better place. </p>
+    </div>
+</body>
+</html>
