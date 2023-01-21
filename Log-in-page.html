@@ -60,6 +60,23 @@
 
         <p>Don't have an account? <a href="Sign-up-page.html"> <b>Sign up</b></a></p>
     </form>
-    
 </body>
+
+<script>
+    let formData = document.querySelector("form");
+    let emailData = document.getElementById("email");
+    let passwordData = document.getElementById("password");
+
+    let MyData = [];
+
+    formData.addEventListener("submit", function(event){
+        event.preventDefault();
+        let formDB = {
+            email : emailData.value,
+            password : passwordData.value
+        }
+        MyData.push(formDB);
+        localStorage.setItem("login-data",JSON.stringify(MyData))
+    })
+</script>
 </html>

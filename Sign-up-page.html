@@ -19,7 +19,7 @@
         form > div > img{
             width: 40%;
         }
-        #name{
+        .name{
             width: 250px;
             margin-top: 15px;
             border: none;
@@ -48,19 +48,45 @@
             <img src="./Images/Hot-grill-logo1.png" alt="">
             <h2>Sign up</h2>
         </div>
-        <input type="text" placeholder="First Name" id="name"> <br/>
-        <input type="text" placeholder="Last Name" id="name"> <br/>
-        <input type="email" placeholder="Email" id="name"> <br/>
-        <input type="number" placeholder="Phone No." id="name"> <br/>
-        <input type="password" placeholder="New Password" id="name"> <br>
-        <input type="password" placeholder="Confirm Password" id="name"> <br>
-        <input type="text" placeholder="Favorite Food" id="name"> <br/>
-        <input type="date" placeholder="Date of Birth" id="name"> <br/>
+        <input type="text" placeholder="First Name" id="firstName" class="name"> <br/>
+        <input type="text" placeholder="Last Name" id="lastname" class="name"> <br/>
+        <input type="email" placeholder="Email" id="email" class="name"> <br/>
+        <input type="number" placeholder="Phone No." id="phoneNo" class="name"> <br/>
+        <input type="password" placeholder="New Password" id="newpassword" class="name"> <br>
+        <input type="password" placeholder="Confirm Password" id="confirmpassword" class="name"> <br>
+        <input type="text" placeholder="Favorite Food" id="favfood" class="name"> <br/>
+        <input type="date" placeholder="Date of Birth" id="dob" class="name"> <br/>
         <input type="submit" id="submit">
         <h6> <hr> OR </hr></h6>
 
         <p>Have an account? <a href="Log-in-page.html"> <b>Log in</b></a></p>
     </form>
-    
+
 </body>
+
+<script>
+    let form = document.querySelector("form");
+    let firstName = document.getElementById("firstName");
+    let lastName = document.getElementById("lastname");
+    let email = document.getElementById("email");
+    let phoneNo = document.getElementById("phoneNo");
+    let newpassword = document.getElementById("newpassword");
+    let confirmpassword = document.getElementById("confirmpassword");
+    let favfood = document.getElementById("favfood");
+    let Dob = document.getElementById("dob");
+
+    let MyData = [];
+
+    form.addEventListener("submit", function(event){
+    event.preventDefault();
+    let formDatabase = {
+      name : formData.value,
+      email : emailData.value,
+      password : passwordData.value
+    }
+    MyData.push(formDatabase);
+    localStorage.setItem("account-data",JSON.stringify(MyData))
+  })
+  
+</script>
 </html>
