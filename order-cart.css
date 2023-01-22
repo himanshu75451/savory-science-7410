@@ -89,3 +89,34 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+@media only screen and (max-width: 1300px){
+    .nav > div{
+        padding: 2px 6px 2px 6px ;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .nav > div{
+        padding: 3px 20px 3px 20px ;
+    }
+    .nav > div > h3{
+        display: none;
+    }
+    .bar{
+        background-color: white;
+    }
+    .bar > a{
+        text-decoration: none;
+        display: none;   
+    }
+    #menu-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media only screen and (max-width: 550px){
+    #menu-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

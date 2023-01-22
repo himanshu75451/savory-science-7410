@@ -215,3 +215,105 @@
     width: 25%;
     padding-top: 20px;
 }
+
+
+
+@media only screen and (max-width: 1300px){
+    .nav > div{
+        padding: 2px 6px 2px 6px ;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .nav > div{
+        padding: 3px 20px 3px 20px ;
+    }
+    .nav > div > h3{
+        display: none;
+    }
+    .bar{
+        background-color: white;
+    }
+    .bar > a{
+        text-decoration: none;
+        display: none;   
+    }
+    .Top > video{
+        width: 100%;
+        margin-top: 55px;
+    }
+    .mid-section-part > div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .data{
+        left: 245px;
+        margin-top: 180px;
+    }
+    .data2{
+        left: 200px;
+        margin-top: 220px;
+    }
+    .data2 > h2{
+        margin-bottom: 20px;
+        font-size:xx-large;
+        color: orangered;
+    }
+    .data2 > p{
+        font-size: small;
+    }
+    .story{
+        left: 60px;
+        margin-top: 60px;
+    }
+    .bottom{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(15, 15, 168);
+        padding: 30px;
+    }
+}
+    @media only screen and (max-width: 550px){
+        .mid-section-part > div{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .data{
+            left: 145px;
+            margin-top: 135px;
+        }
+        .data > h2{
+            margin-bottom: 20px;
+            font-size:xx-large;
+            color: orangered;
+        }
+        .data > p{
+            font-size: small;
+        }
+        .data2{
+            left: 140px;
+            margin-top: 150px;
+        }
+        .data2 > h2{
+            margin-bottom: 20px;
+            font-size:large;
+            color: orangered;
+        }
+        .story{
+            left: 30px;
+            margin-top: 20px;
+        }
+        .story > h2{
+            margin-bottom: 20px;
+            font-size:x-large;
+        }
+        .bottom{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            background-color: rgb(15, 15, 168);
+            padding: 30px;
+        }
+}
