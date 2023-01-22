@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: white;
+    z-index: 99999;
+}
+.nav > div{
+    width: 100%; box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px 3px 20px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav > div > button{
+    font-size: 30px;
+    border: none;
+    color: orangered;
+    padding: 4px;
+    border-radius: 3px;
+}
+.nav > div > button:hover{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+.nav > div > div > img{
+    width: 7%;
+    margin: auto;
+    display: flex;
+}
+.nav > div > a{
+    color: orangered
+}
+.red{
+    display: flex;
+    gap: 10px;
+}
+.red > a > img{
+    width: 40px;
+}
+.bar{
+    background-color: rgb(239, 207, 63); 
+}
+.bar > a{
+    padding: 5px;
+    text-decoration: none;   
+}
+
+.story{
+    width: 30%;
+    position: absolute;
+    line-height: 1.2;
+    left: 100px;
+    margin-top: 200px;
+}
+.story > h2{
+    margin-bottom: 20px;
+    font-size:xx-large;
+}
+.story > button{
+    border: none;
+    margin-top: 35px;
+    font-size: large;
+    padding: 12px 40px 12px 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(10, 10, 187);
+}
+.story > button > a{
+    color: white;
+    text-decoration: none;
+}
+.story > button:hover{
+    background-color: orangered;
+}
+.img > img{
+    width: 100%;
+    height: 600px;
+    margin-top: 105px;
+}
+.head > h1{
+    font-size: xx-large;
+    color: orangered;
+}
+.head{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 30px;
+}
+.head > h1{
+    font-size: xxx-large;
+    margin-bottom: 10px;
+}
