@@ -4,7 +4,7 @@ let Order = JSON.parse(localStorage.getItem("Add-to-Cart")) || [];
 function Display(data){
     let total = document.getElementById("total-price")
     Container.innerHTML = "";
-    Order.forEach((product) => {
+    Order.forEach((product,index) => {
         let card = document.createElement("div");
         let image = document.createElement("img");
         let name = document.createElement("h3");
@@ -24,9 +24,9 @@ function Display(data){
             desrc.textContent = product.desrc;
             price.textContent = product.price;
 
-        Cancel.addEventListener("cancel", () =>{
-            Order = Order.filter((Element) =>{
-            return Element.id !== product.id;
+        Cancel.addEventListener("click", () =>{
+            Order = Order.filter((element) =>{
+            return element.id !== product.id;
             })
             localStorage.setItem("Add-to-Cart",JSON.stringify(Order))
             Display()
@@ -50,8 +50,8 @@ function Display(data){
     
     let sum = 0;
     for(let x=0; x<Order.length; x++){
-    sum+=Order[x].price*Order[x].quantity;
-}
-total.textContent = sum;
+        sum+=(Number(Order[x].price) * Number(Order[x].quantity));
+    }
+    total.textContent = sum;
 }
 Display();
