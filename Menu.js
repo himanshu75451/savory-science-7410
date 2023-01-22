@@ -15,19 +15,19 @@ FetchData();
 
 
 let Container  = document.getElementById("menu-container");
-let MyOrder = JSON.parse(localStorage.getItem("Add to Cart")) || [];
+let MyOrder = JSON.parse(localStorage.getItem("Add-to-Cart")) || [];
 
 function Display(data){
     Container.innerHTML = "";
     data.forEach((product) => {
         let card = document.createElement("div");
         let image = document.createElement("img");
-        let name = document.createElement("h2");
+        let name = document.createElement("h3");
         let desrc = document.createElement("p");
         let price = document.createElement("h4");
         let add = document.createElement("button");
 
-            add.textContent = "Add to Cart";
+            add.textContent = "Add-to-Cart";
             image.src = product.image;
             name.textContent = product.name;
             desrc.textContent = product.desrc;
@@ -37,9 +37,9 @@ function Display(data){
             if(checkOrder(product)){
             alert("Product Already in Card");
             }else{
-            MyOrder.push(product);
-            localStorage.setItem("Add to Cart",JSON.stringify(MyOrder))
-            alert("Product Add");
+            MyOrder.push({...product,quantity:1});
+            localStorage.setItem("Add-to-Cart",JSON.stringify(MyOrder))
+            alert("Product Added");
             }
         });
         
