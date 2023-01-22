@@ -6,7 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOT GRILL - Feed the flame</title>
     <style>
-
+        *{
+            box-sizing: border-box; 
+        }
+        .nav{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .nav > div{
+            width: 100%; box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px 0px 20px ;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .nav > div > button{
+            font-size: 28px;
+            border: none;
+            color: orangered;
+            /* padding: 2px;
+            border-radius: 3px; */
+        }
+        .nav > div > a{
+            color: orangered
+        }
+        .red{
+            display: flex;
+            gap: 10px;
+        }
+        .red > a > img{
+            width: 40px;
+        }
         form{
             width: 400px;
             margin: 0 auto;
@@ -43,6 +74,17 @@
     </style>
 </head>
 <body>
+    <div class="nav">
+        <div>
+            <button> <a href="./Index.html"><b>HOME</b></a></button>
+            <div>
+                <H3>HOT GRILL - Feed The Flame</H3>
+            </div>
+            <div class="red">
+                <a href="Log-in-page.html"> <img src="./Images/icon-name.jpg" alt="error"></a>
+            </div>
+        </div>
+    </div>
     <form>
         <div>
             <img src="./Images/Hot-grill-logo1.png" alt="">
@@ -91,6 +133,7 @@
     }
     MyData.push(formDatabase);
     localStorage.setItem("signup-data",JSON.stringify(MyData))
+    location.href = "./Log-in-page.html";
   })
   
 </script>
