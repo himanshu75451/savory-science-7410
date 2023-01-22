@@ -80,12 +80,17 @@
     form.addEventListener("submit", function(event){
     event.preventDefault();
     let formDatabase = {
-      name : formData.value,
-      email : emailData.value,
-      password : passwordData.value
+        firstName : firstName.value,
+        lastName : lastName.value,
+        email : email.value,
+        phoneNo : phoneNo.value,
+        newpassword : newpassword.value,
+        confirmpassword : confirmpassword.value,
+        favfood : favfood.value,
+        Dob : Dob.value
     }
     MyData.push(formDatabase);
-    localStorage.setItem("account-data",JSON.stringify(MyData))
+    localStorage.setItem("signup-data",JSON.stringify(MyData))
   })
   
 </script>
